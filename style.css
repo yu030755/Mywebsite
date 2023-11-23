@@ -1,0 +1,15 @@
+BODY{
+  background-image : url(back.png);
+}
+TABLE{
+  background-color : #ccff99;
+}
+H1{
+  font-size : 370%;
+  color : #ffffff;
+  background-color : #003366;
+}
+UL{
+  line-height : 2em;
+  background-color : #99cccc;
+}
