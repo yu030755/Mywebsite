@@ -5,16 +5,11 @@ TABLE{
   background-color : #ccff99;
 }
 H1{
-  font-size : 200%;
+  font-size : 370%;
   color : #ffffff;
-  background-color : #00a968;
+  background-color : #003366;
 }
-
 UL{
-  line-height : 1.5em;
+  line-height : 2em;
+  background-color : #99cccc;
 }
-
-td{
-	font-size:30px;
-}
-
