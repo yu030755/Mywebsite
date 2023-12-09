@@ -1,0 +1,19 @@
+body{
+	background-image:url("back.png");
+	background-repeat:repeat-y;
+}
+
+h1{
+	font-size:320%;
+	background:#ffcc66;
+}
+h2{
+	text-align:center;
+	background:#66cc99;
+}
+
+ol{
+	font-style:italic;
+	font-size:120%;
+	color:#cc6600;
+}
