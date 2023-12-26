@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<table border="0">
+<tr><td colspan="2"><center>㊗小原奈緒子17歳㊗</td></tr>
+<tr><td colspan="2">小原奈緒子はLv17にレベルアップしました！！</td></tr>
+<tr><td colspan="2">生徒会長からの誕生日プレゼントです。是非お使いください！！</td></tr>
+<tr><td><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ベースのスタイル */
+    .coupon-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .coupon {
+      width: 200px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+
+    /* 使用不能状態のスタイル */
+    .disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="coupon-container">
+    <div class="coupon" id="coupon1" onclick="useCoupon('coupon1')">
+      カラオケ無料券　①
+    </div>
+
+    <div class="coupon" id="coupon2" onclick="useCoupon('coupon2')">
+      カラオケ無料券 ②
+    </div>
+  </div>
+
+  <script>
+    // JavaScriptでクーポンの使用状態をクッキーに保存し、テキストを変更する
+    function useCoupon(couponId) {
+      const couponElement = document.getElementById(couponId);
+
+      // クーポンが既に使用されている場合は何もしない
+      if (couponElement.classList.contains('disabled')) {
+        return;
+      }
+
+      // クッキーにクーポンの使用状態を保存
+      document.cookie = `${couponId}Used=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+
+      // クーポンを使用済みにする
+      couponElement.classList.add('disabled');
+
+      // テキストを変更
+      couponElement.textContent = '使用済';
+    }
+
+    // ページロード時にクーポンの使用状態を確認し、必要なら使用不能にする
+    document.addEventListener('DOMContentLoaded', function() {
+      const coupon1Element = document.getElementById('coupon1');
+      const coupon2Element = document.getElementById('coupon2');
+      
+      // Cookieからクーポンの使用状態を取得
+      const isCoupon1Used = document.cookie.includes('coupon1Used=true');
+      const isCoupon2Used = document.cookie.includes('coupon2Used=true');
+
+      // クーポンが使用されていれば使用不能にする
+      if (isCoupon1Used) {
+        coupon1Element.classList.add('disabled');
+        coupon1Element.textContent = '使用できません';
+      }
+
+      if (isCoupon2Used) {
+        coupon2Element.classList.add('disabled');
+        coupon2Element.textContent = '使用できません';
+      }
+    });
+  </script>
+</td></tr>
+<tr><td colspen="2"><center>⚠利用上の注意⚠</center><br><ul>
+<li>カラオケのみ有効</li>
+<li>1クーポン当たり上限金額1000円まで</li></ul></td></tr></table>
+
+</body>
+</html>
+
