@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-<table border="0">
-<tr><td colspan="2"><center>㊗小原奈緒子17歳㊗</td></tr>
-<tr><td colspan="2">小原奈緒子はLv17にレベルアップしました！！</td></tr>
-<tr><td colspan="2">生徒会長からの誕生日プレゼントです。是非お使いください！！</td></tr>
-<tr><td><!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,32 +11,198 @@
       margin: 20px;
     }
 
-    .coupon {
-      width: 200px;
-      height: 100px;
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      line-height: 100px;
-      cursor: pointer;
+.coupon {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(to right, #4CAF50, #00bcd4); /* 水色グラデーションの色指定 */
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+
+/* 使用不能状態のスタイル */
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7; /* グレーシェードの透明度を設定（1が完全不透明、0が完全透明） */
+}
+
+    @keyframes rainbowAnimation {
+      0% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+      }
+      16.666% {
+        color: #ff9900;
+        text-shadow: 0 0 10px #ff9900;
+      }
+      33.333% {
+        color: #ffff00;
+        text-shadow: 0 0 10px #ffff00;
+      }
+      50% {
+        color: #00ff00;
+        text-shadow: 0 0 10px #00ff00;
+      }
+      66.666% {
+        color: #0000ff;
+        text-shadow: 0 0 10px #0000ff;
+      }
+      83.333% {
+        color: #9900ff;
+        text-shadow: 0 0 10px #9900ff;
+      }
+      100% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+      }
     }
 
-    /* 使用不能状態のスタイル */
-    .disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      animation: rainbowAnimation 6s infinite;
+    }
+
+table{
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 0;
+}
+
+table th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+table th{
+  text-align: center;
+  color:white;
+  background: linear-gradient(to right, #98FF98, #00FF7F);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table td{
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table td:last-child{
+  border-right: 1px solid #a8b7c5;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+   .emerald-gradient {
+      background: linear-gradient(to bottom, #50c878, #007959);
+      color: white;
+    }
+
+ .green-gradient {
+      background: linear-gradient(to bottom, #b3ffcc, #33cc33);
+      color: black;
+}
+
+ul{
+	text-align:left;
+}
+
+    .orange-gradient {
+      background: linear-gradient(to bottom, #ff8c00, #ff4500);
+      color: #8b0000; /* テキストの色は適当に調整 */
+    }
+
+    .skin-gradient {
+      background: linear-gradient(to bottom, #ffdab9, #ffdead);
+      color: #8b4513; /* テキストの色は適当に調整 */
+}
+
+    .pink-gradient {
+      background: linear-gradient(to bottom, #ffb6c1, #ff69b4);
+      color: #800080; /* テキストの色は適当に調整 */	
+}
+
+   .aqua-gradient {
+      background: linear-gradient(to bottom, #add8e6, #00bfff);
+      color: #000080; /* テキストの色は適当に調整 */
+}
+
+    .lightgreen-gradient {
+      background: linear-gradient(to bottom, #98fb98, #90ee90);
+      color: #006400; /* テキストの色は適当に調整 */
+}
+
+
+   .rainbow-gradient {
+      animation: rainbowAnimation 6s infinite;
+    }
+
+    @keyframes rainbowAnimation {
+      0% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+      }
+      16.666% {
+        color: #ff9900;
+        text-shadow: 0 0 10px #ff9900;
+      }
+      33.333% {
+        color: #ffff00;
+        text-shadow: 0 0 10px #ffff00;
+      }
+      50% {
+        color: #00ff00;
+        text-shadow: 0 0 10px #00ff00;
+      }
+      66.666% {
+        color: #0000ff;
+        text-shadow: 0 0 10px #0000ff;
+      }
+      83.333% {
+        color: #9900ff;
+        text-shadow: 0 0 10px #9900ff;
+      }
+      100% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+      }
     }
   </style>
 </head>
 <body>
-
-  <div class="coupon-container">
-    <div class="coupon" id="coupon1" onclick="useCoupon('coupon1')">
-      カラオケ無料券　①
+<table border="0">
+<tr><th colspan="3"><center><h1>㊗小原奈緒子17歳㊗</h1></th></tr>
+<tr><td colspan="3">小原奈緒子はLv17にレベルアップしました！！</td></tr>
+<tr><td colspan="3">生徒会長からの誕生日プレゼントです。是非お使いください！！</td></tr>
+<tr><td>
+   <div class="coupon" id="coupon1" onclick="useCoupon('coupon1')">
+      カラオケ無料券①
     </div>
 
     <div class="coupon" id="coupon2" onclick="useCoupon('coupon2')">
-      カラオケ無料券 ②
+      カラオケ無料券②
     </div>
   </div>
 
@@ -88,10 +247,115 @@
       }
     });
   </script>
+</td>
+<td>
+   <div class="coupon" id="coupon3" onclick="useCoupon('coupon3')">
+      カラオケ無料券③
+    </div>
+
+    <div class="coupon" id="coupon4" onclick="useCoupon('coupon4')">
+      カラオケ無料券④
+    </div>
+  </div>
+
+  <script>
+    // JavaScriptでクーポンの使用状態をクッキーに保存し、テキストを変更する
+    function useCoupon(couponId) {
+      const couponElement = document.getElementById(couponId);
+
+      // クーポンが既に使用されている場合は何もしない
+      if (couponElement.classList.contains('disabled')) {
+        return;
+      }
+
+      // クッキーにクーポンの使用状態を保存
+      document.cookie = `${couponId}Used=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+
+      // クーポンを使用済みにする
+      couponElement.classList.add('disabled');
+
+      // テキストを変更
+      couponElement.textContent = '使用済';
+    }
+
+    // ページロード時にクーポンの使用状態を確認し、必要なら使用不能にする
+    document.addEventListener('DOMContentLoaded', function() {
+      const coupon3Element = document.getElementById('coupon3');
+      const coupon4Element = document.getElementById('coupon4');
+      
+      // Cookieからクーポンの使用状態を取得
+      const isCoupon3Used = document.cookie.includes('coupon3Used=true');
+      const isCoupon4Used = document.cookie.includes('coupon4Used=true');
+
+      // クーポンが使用されていれば使用不能にする
+      if (isCoupon3Used) {
+        coupon3Element.classList.add('disabled');
+        coupon3Element.textContent = '使用済';
+      }
+
+      if (isCoupon4Used) {
+        coupon4Element.classList.add('disabled');
+        coupon4Element.textContent = '使用済';
+      }
+    });
+  </script>
+</td>
+<td>
+   <div class="coupon" id="coupon5" onclick="useCoupon('coupon5')">
+      カラオケ無料券⑤
+    </div>
+
+    <div class="coupon" id="coupon6" onclick="useCoupon('coupon6')">
+      カラオケ無料券⑥
+    </div>
+  </div>
+
+  <script>
+    // JavaScriptでクーポンの使用状態をクッキーに保存し、テキストを変更する
+    function useCoupon(couponId) {
+      const couponElement = document.getElementById(couponId);
+
+      // クーポンが既に使用されている場合は何もしない
+      if (couponElement.classList.contains('disabled')) {
+        return;
+      }
+
+      // クッキーにクーポンの使用状態を保存
+      document.cookie = `${couponId}Used=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+
+      // クーポンを使用済みにする
+      couponElement.classList.add('disabled');
+
+      // テキストを変更
+      couponElement.textContent = '使用済';
+    }
+
+    // ページロード時にクーポンの使用状態を確認し、必要なら使用不能にする
+    document.addEventListener('DOMContentLoaded', function() {
+      const coupon5Element = document.getElementById('coupon5');
+      const coupon6Element = document.getElementById('coupon6');
+      
+      // Cookieからクーポンの使用状態を取得
+      const isCoupon5Used = document.cookie.includes('coupon5Used=true');
+      const isCoupon6Used = document.cookie.includes('coupon6Used=true');
+
+      // クーポンが使用されていれば使用不能にする
+      if (isCoupon5Used) {
+        coupon5Element.classList.add('disabled');
+        coupon5Element.textContent = '使用済';
+      }
+
+      if (isCoupon6Used) {
+        coupon6Element.classList.add('disabled');
+        coupon6Element.textContent = '使用済';
+      }
+    });
+  </script>
 </td></tr>
-<tr><td colspen="2"><center>⚠利用上の注意⚠</center><br><ul>
+<tr><td colspen="3"><center>⚠利用上の注意⚠</center><br><ul>
 <li>カラオケのみ有効</li>
-<li>1クーポン当たり上限金額1000円まで</li>
+<li>1クーポン当たり上限金額550円まで</li>
+<li>おつりはでません</li>
 <li>私が同行するときのみ使用可能</li></ul></td></tr></table>
 
 </body>
