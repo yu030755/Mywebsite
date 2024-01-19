@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+  <script>
+    let ballCount = 0;
+
+    function pickUpBall() {
+      ballCount++;
+      if (ballCount < 5) {
+        alert("ボールを拾い集めた。");
+      } else {
+        showPaymentDialog();
+      }
+    }
+
+    function showPaymentDialog() {
+      const confirmPayment = confirm("課金が、必要。550万円の、課金が、必要。");
+      if (confirmPayment) {
+        // ここに課金の処理を追加する
+        alert("課金成功。");
+        ballCount = 0; // ボールの数をリセット
+      } else {
+        ballCount = 4; // ダイアログを閉じた場合、次のクリックで再び表示されるように
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="pickUpBall()">ボールを拾う</button>
+<img src="MGMS.jpeg">
+</body>
+</html>
