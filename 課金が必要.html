@@ -8,6 +8,16 @@
       text-align: center;
       padding: 50px;
     }
+
+    button {
+      /* ボタンのスタイルを設定 */
+      background-image: url('MGMS.jpeg');
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+      border: none;
+      cursor: pointer;
+    }
   </style>
   <script>
     let ballCount = 0;
@@ -15,7 +25,7 @@
     function pickUpBall() {
       ballCount++;
       if (ballCount < 5) {
-        alert("ボールを拾い集めた。");
+        alert("ボールを拾い集めました！");
       } else {
         showPaymentDialog();
       }
@@ -25,7 +35,7 @@
       const confirmPayment = confirm("課金が、必要。550万円の、課金が、必要。");
       if (confirmPayment) {
         // ここに課金の処理を追加する
-        alert("課金成功。");
+        alert("財政維持で金儲けするやつは負け犬☆彡");
         ballCount = 0; // ボールの数をリセット
       } else {
         ballCount = 4; // ダイアログを閉じた場合、次のクリックで再び表示されるように
@@ -34,7 +44,7 @@
   </script>
 </head>
 <body>
-  <button onclick="pickUpBall()">ボールを拾う</button>
-<img src="MGMS.jpeg">
+<h1>↓ボール拾い依頼ボタン↓</h1>
+  <button onclick="pickUpBall()"></button>
 </body>
 </html>
