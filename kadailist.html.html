@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>チェックボックスを含むリスト</title>
+<style>
+.list37 {
+  position: relative;
+  margin: 3em 0 1em 0;
+  background: #fff6e6;
+  box-shadow: 0 2px 3px rgba(0,0,0,.22);
+}
+.list37-title {
+  font-size: 1.15em;
+  padding: 4px 0 4px 16px;
+  color: #ee8992;
+  font-weight:bold;
+}
+.list37:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  width: 30%;
+  height: 35px;
+  opacity: 0.7;
+  margin: -35px auto 10px 35%;
+  background-color: #ff99ac;
+  background-image: radial-gradient(#fff 24%, transparent 0), radial-gradient(#fff 24%, transparent 0);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  transform: rotate(-2deg);
+  left: 10px;
+  right: 10px;
+}
+.list37 ul,.list37 ol  {
+  position: relative;
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
+  color: #ee8992;
+  border: none;
+  list-style-type: none;
+}
+.list37 ol {
+  counter-reset: number;
+}
+.list37 ul li,.list37 ol li {
+  line-height: 1.5;
+  padding: 0.5em 0 0.5em 1.6em;
+  border-bottom: dashed 1px #ee8992;
+}
+.list37 ul li:before {
+  position: absolute;
+ font-family: FontAwesome;
+  content: "\f14a";
+  left : 0.7em;
+  color: #ee8992;
+}
+.list37 ol li:before {
+  display: inline-block;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  content: counter(number);
+  counter-increment: number;
+  left: 0.5em;
+  width: 22px;
+  height: 22px;
+  border-radius: 20%;
+  background: #ee8992;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 22px;
+}
+.list37 ul li:last-of-type,.list37 ol li:last-of-type{
+  border-bottom: none;
+}
+</style>
+</head>
+<body>
+<a href="classi://">くらっしー</a>
+<div class="list37">
+  <div class="list37-title">タイトル</div>
+  <ol>
+    <li><input type="checkbox" id="item1" name="item1" value="リスト"><label for="item1">リスト</label></li>
+    <li><input type="checkbox" id="item2" name="item2" value="デザイン"><label for="item2">デザイン</label></li>
+    <li><input type="checkbox" id="item3" name="item3" value="CSS"><label for="item3">CSS</label></li>
+    <li><input type="checkbox" id="item4" name="item4" value="見本"><label for="item4">見本</label></li>
+  </ol>
+</div>
+
+<script>
+// ローカルストレージからチェックボックスの状態を読み込む関数
+function loadChecked() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(function(checkbox) {
+        var value = localStorage.getItem(checkbox.id);
+        if (value === "true") {
+            checkbox.checked = true;
+        }
+    });
+}
+
+// ページ読み込み時に保存されたチェックボックスの状態を読み込む
+loadChecked();
+
+// チェックボックスの状態が変更された時に保存を行う
+document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+});
+</script>
+
+</body>
+</html>
