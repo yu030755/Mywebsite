@@ -35,12 +35,21 @@
       const confirmPayment = confirm("課金が、必要。550万円の、課金が、必要。");
       if (confirmPayment) {
         // ここに課金の処理を追加する
-        alert("財政維持で金儲けするやつは負け犬☆彡");
+        alert("財政維持で貯金を増やす、そんなやつは負け犬☆彡");
         ballCount = 0; // ボールの数をリセット
       } else {
         ballCount = 4; // ダイアログを閉じた場合、次のクリックで再び表示されるように
       }
     }
+
+    // 不定期にあいうえおダイアログを表示
+    setInterval(function() {
+      const randomInterval = Math.floor(Math.random() * 10000) + 1000; // ランダムな時間間隔を生成 (1秒から10秒まで)
+      setTimeout(function() {
+        alert("  エラーが発生しました。");
+      }, randomInterval);
+    }, 20000); // 20秒ごとにチェック
+
   </script>
 </head>
 <body>
