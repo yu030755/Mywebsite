@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missile Launch</title>
+</head>
+<body>
+
+<img src="MGMS.jpeg" alt="Missile" id="missileImg">
+
+<script>
+// ミサイル発射時のダイアログとエラーダイアログ
+const missileDialog = "ミサイル発射！";
+const errorDialog = "ピピピ！エラー";
+
+// エラー時の音声ファイル
+const errorSound = new Audio('error.mp3');
+
+// 画像要素を取得
+const missileImg = document.getElementById('missileImg');
+
+// クリックイベントリスナーを追加
+missileImg.addEventListener('click', launchMissile);
+
+// ミサイル発射関数
+function launchMissile() {
+    // ランダムな数値を生成して、3回に1回エラーをシミュレート
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    if (randomNumber === 1) {
+        // エラーダイアログ表示
+        alert(errorDialog);
+        // エラー音再生
+        errorSound.play();
+    } else {
+        // ミサイル発射ダイアログ表示
+        alert(missileDialog);
+    }
+}
+</script>
+
+</body>
+</html>
