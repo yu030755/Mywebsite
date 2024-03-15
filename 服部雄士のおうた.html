@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音楽再生プレーヤー</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .album {
+    margin: 20px;
+    text-align: center;
+  }
+  .album img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .album-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .tracklist {
+    margin-bottom: 20px;
+  }
+  .tracklist-item {
+    margin-bottom: 5px;
+  }
+  .player {
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="album"><table border="1"><tr><td>    <img src="IMG_2200.jpeg" alt="CDジャケット"></td>
+   <td> <div class="album-info">服部雄士のおうた</div></td></tr>
+    <tr><td colspan="2"><div class="tracklist">
+      <div class="tracklist-item">トラック1: ミーモ・ダンシング</div>
+      <div class="player">
+        <audio controls>
+          <source src="mimo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="tracklist-item">トラック2: 香菜、頭をよくしてあげよう</div>
+      <div class="player">
+        <audio controls>
+          <source src="kana.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="tracklist-item">トラック3: Life is onceで候</div>
+      <div class="player">
+        <audio controls>
+          <source src="life.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+</td></tr></table>
+</body>
+</html>
